@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute,Relative,Fixed & others</title>
+    <!-- position = static(default),absolute,relative,fixed and sticky -->
+    <style>
+        .container{
+            border: 2px black solid;
+            background-color: snow;
+            height: 3444px;
+        }
+        .box{
+            display: inline-block;   /* div-block to inline-block */
+            border: 2px solid grey;
+            margin:2px;
+            height: 150px;
+            width: 150px;
+        }
+        #box3{
+            /* relative to box orignal position */
+            position:relative;
+            top: 34px;
+            bottom: 23px;
+            left: 29px;
+        }
+        #box5{
+            /* relative to container/first element orignal position (leaves gap at its prev position) */
+            position:absolute;
+            top: 34px;
+            bottom: 23px;
+            left: 29px;
+        }
+        #box2{
+            /* remain fixed at its specified position */
+            position: fixed;
+            right: 2px;
+            bottom: 14px;
+        }
+        #box6{
+            /* stick to its position */
+            position: sticky;
+            top:10px;      
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1.Static</div>
+        <div class="box" id="box2">2.Fixed</div>   <!-- for chat with us type boxes -->
+        <div class="box" id="box3">3.Relative</div>
+        <div class="box" id="box4">4.Static</div>
+        <div class="box" id="box5">5.Absolute</div>
+        <div class="box" id="box6">6.Sticky</div>
+
+    </div>
+</body>
+</html>

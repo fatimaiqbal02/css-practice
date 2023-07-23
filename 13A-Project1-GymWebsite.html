@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatima's Gym</title>
+    <link rel="stylesheet" href="/2-css/13B-gymWebsite.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url('/2-css/Projects-Images/gymWeb.jpg');
+            background-size: cover;
+            color: white;
+            font-family: 'Cookie','Times New Roman', cursive, Times, serif;
+            /* height: 4554px; */
+        }
+        .left{
+            display: inline-block;
+            position: absolute;
+            left: 45px;
+            top: 19px;
+          /*   border: 2px solid yellow;   */  
+        }
+        .left img{
+            width: 59px;
+            height: 48px;
+           /*  filter: invert(100%); */
+           display: block;
+           margin: auto;
+        }
+        .left div{
+            line-height: 2em;
+            text-align: center;
+            font-size: 18px;
+        }
+        .mid{
+            display: block;
+            width: 48%;
+            margin: 33px auto;
+            /* border: 2px solid blue; */
+        }
+        .navBar li{
+            display: inline-block;
+            list-style: none;
+            font-size: 26px;
+        }
+        .navBar li a{
+            color: white;
+            text-decoration: none;
+            padding: 13px 17px;
+        }
+        .navBar li a:hover, .navBar li a.active{
+            color: rgb(207, 205, 205);
+            text-decoration: underline;
+        }
+        .right{
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 18px;
+            /* border: 2px solid yellow; */
+        }
+        .right button,.btn{
+            border: 2px solid gray;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            padding: 1px 5px;
+            font-size: 18px;
+            font-family: 'Cookie','Times New Roman', cursive, Times, serif;
+            border-radius: 4px;
+        }
+        .right button:hover, .btn:hover{
+            background-color: rgb(41, 39, 39);
+        }
+        .right button:active, .btn:hover{
+            background-color: rgb(60, 57, 57);
+        }
+        .container{
+            text-align: center;
+            font-size: 16px;
+            border: 2px solid rgb(255, 255, 255);
+            margin: 57px 162px;
+            padding: 6px 70px;
+            width: 20%;
+            border-radius: 17px;
+        }
+        .form-group input{
+            text-align: center;
+            font-weight: bold;
+            background-color: #efecec;
+            font-size: 14px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 2px 13px;
+            width: 98%;
+            margin: 2px -9px;
+            border: 1px groove gray;
+        }
+        .container button{
+            display: block;
+            width: 103%;
+            margin: 10px auto;
+            
+        }    
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="/2-css/Projects-Images/f-logo.jpg" alt="logo"> 
+            <div>Fatima's Fitness</div>
+        </div>
+
+        <div class="mid">
+            <nav class="navBar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="right">
+            <button class="btn">Give Feedback</button>
+            <button class="btn">Call Us Now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best gym Now!!</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="myID" id="myID" placeholder="Enter Your Name:">
+                <input type="text" name="myID" id="myID" placeholder="Enter Your Email:">
+                <input type="text" name="myID" id="myID" placeholder="Enter Your Location:">
+                <input type="text" name="myID" id="myID" placeholder="Enter Your Contact No:">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>

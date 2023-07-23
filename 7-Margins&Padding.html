@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Box Modeling</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #7faab0;
+        }
+        .container{
+            background-color: #e7b6bf;
+            border: 4px #123f54 solid;
+            width: 533px;             /* width+margin+padding */
+            box-sizing: border-box;
+
+        /*  padding: 14px; */
+
+         /* padding-top: 10px;
+            padding-bottom: 30px;
+            padding-left: 4px;
+            padding-right: 4px; */
+
+        /*  padding:10px 4px 30px 4px;            padding: top,right,bottom,left */
+           
+            padding: 20px 19px;     /*  padding: y(top/botttom), x(right/left); */
+            
+            border-radius: 23px;
+            margin: 14px 19px;            /* same properties as padding */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aperiam tenetur
+            non odit soluta iusto iste animi inventore libero tempora? Eveniet quam iste 
+            perferendis!</p>
+    </div>
+
+    <div class="container">
+        <h3>This is heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aperiam tenetur
+            non odit soluta iusto iste animi inventore libero tempora? Eveniet quam iste 
+            perferendis!</p>
+    </div>
+
+    <div class="container">
+        <h3>This is heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et aperiam tenetur
+            non odit soluta iusto iste animi inventore libero tempora? Eveniet quam iste 
+            perferendis!</p>
+    </div>
+</body>
+</html>

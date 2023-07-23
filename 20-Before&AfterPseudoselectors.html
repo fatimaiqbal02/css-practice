@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before&After Pseudoselectors</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            /*  height: 4445px; */
+        }
+
+        /*  header{
+            border: 2px solid green; 
+        } */
+        header::before {
+            background: url('https://source.unsplash.com/collection/190727') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        .navigation {
+            display: flex;
+            font-size: 18px;
+            padding: 11px 23px;
+            justify-content: center;
+            /*  border:2px solid yellow; */
+            background-color: rgb(59, 57, 57);
+            margin: 0px;
+        }
+
+        nav ul li.item {
+            list-style: none;
+            padding: 3px 24px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: rgb(219, 215, 215);
+            text-decoration: underline;
+        }
+
+        section {
+            margin: 65px 190px;
+            height: 444px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            /*   border: 2px solid red; */
+            align-items: center;
+            /* vertically center */
+            justify-content: center;
+            /* horizontally center */
+            padding: 2px 2px;
+        }
+
+        /* section::before{
+            content: "this is before a content";
+        } 
+        section::after{
+            content: "this is  after a content";
+        }    */
+        section img {
+            width: 320px;
+            height: 410px;
+            margin-left: 30px;
+            padding-right: 30px;
+            border-right: 2px darkgray solid;
+        }
+
+        .sec {
+            text-align: center;
+            /*   border: 2px solid yellow; */
+            padding: 54px 53px;
+            padding-left: 20px;
+            margin-right: 380px;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        hr {
+            text-align: center;
+            width: 33%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navBar">
+            <ul class="navigation">
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About Us</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                <li class="item"><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img src="https://cdn.pixabay.com/photo/2015/01/09/11/09/meeting-594091_960_720.jpg" alt="noPic">
+
+        <div class="sec">
+            <h3>Welcome to Coding World</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque sed debitis,
+                similique ipsam recusandae accusantium vitae nostrum, rem ipsum totam aut deserunt!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum deserunt repellendus 
+                omnis voluptas minima minus. Non modi utquibusdam hic. Lorem, ipsum dolor sit amet 
+                consectetur adipisicing elit. Id iure rerum enim at laudantium temporibus nesciunt,
+                cumque necessitatibus inventore qui, corrupti culpa nihil porro?
+                Deleniti expedita quas</p>
+            <hr>
+        </div>
+    </section>
+</body>
+</html>

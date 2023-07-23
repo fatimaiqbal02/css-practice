@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-Index</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+        }
+        #box1{
+            position: relative;
+            top:34px;
+            z-index: 45;        /* the box with more z-index value comes over other */
+            background-color: yellow;
+        }
+        #box2{  
+            position: relative;
+            top: 15px;
+            z-index: 34;            /* not work for static position */
+            background-color: green;
+        }
+        #box3{
+            position: relative;
+            z-index: 67; 
+         /* display: none; */  /* completely hidden doesn't take its space */
+         /* visibility: hidden; */     /*  it will take its space */     /* default-visible */
+            background-color: blue;
+        }
+        #box4{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

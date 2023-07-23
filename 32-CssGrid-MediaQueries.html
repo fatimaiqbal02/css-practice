@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Grid-Media Queries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navBar navBar navBar navBar'       
+            'section section section aside'  
+            'footer footer footer footer';
+        }
+        @media only screen and (max-width:300px){   
+            body{
+                background-color: red;
+            }
+            .container{
+                grid-template-areas: 
+                'navBar navBar navBar navBar'       
+                'section section section section'
+                'aside aside aside aside'  
+                'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+            }
+        }
+        @media only screen and (min-width:301px) and (max-width:500px){
+            body{
+                background-color: blue;
+            }
+            .container{
+                grid-template-areas: 
+                'navBar navBar navBar navBar'       
+                'section section section section'
+                'aside aside aside aside'  
+                'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+        }
+        @media only screen and (min-width:501px) and (max-width:800px){
+            body{
+                background-color: green;
+            }
+            .container{
+                grid-template-areas: 
+                'navBar navBar navBar navBar'       
+                'section section section section'
+                'aside aside aside aside'  
+                'footer footer footer footer';
+            }
+        }
+        @media only screen and (min-width:801px){
+            body{
+                background-color: purple;
+            }
+        }
+       .bdr{
+            border: 2px solid black;
+            background-color: wheat;
+            padding: 23px;
+        }
+        nav{
+            text-align: center;
+            grid-area: navBar;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            text-align: center;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>AboutUs</span>
+            <span>Services</span>
+            <span>ContactUs</span>
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS In English</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laudantium iusto voluptas maiores alias quia quo eveniet harum odio repudiandae natus nam non, est voluptatum ipsam voluptatibus consequuntur perferendis repellendus maxime cum. Velit laudantium architecto accusamus dolorem deserunt non inventore praesentium dignissimos cum, earum maiores labore repellat commodi est voluptatum, amet quas, unde tenetur ut. Officia, quia. Beatae voluptates, pariatur hic eos debitis vel sed rerum, dicta veniam iste natus sequi? Laboriosam, dignissimos! Illo sint facere asperiores at voluptate odio fugit enim aliquid ex laboriosam tenetur facilis quis soluta nisi, iusto atque dolor dolorem laudantium possimus officiis sapiente numquam optio.</p>
+        </section>
+        <aside class="bdr">
+            <h2>More About Us</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae vero id aut fugiat ea expedita commodi veritatis doloribus dolor reprehenderit inventore, temporibus ab debitis fuga sequi quos dolores magni nostrum voluptatum voluptatibus odio ipsam molestias deleniti! Culpa, earum beatae qui inventore modi perferendis ab velit sint soluta neque nihil hic adipisci corrupti ut veniam facilis exercitationem laudantium odit eius? Saepe sed magni doloribus molestiae ipsam laborum iste!</p>
+        </aside>
+        <footer class="bdr">
+            copyRight code with fatima 2020
+        </footer>
+    </div>
+
+</body>
+</html>

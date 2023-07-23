@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Media Queries</title>
+    <!-- Use: when we have to add some extra css for diff screens -->
+    <style>
+        .box{
+            background-color: burlywood;
+            text-align: center;
+            font-size: 50px;
+            color: white;
+            display: none;
+        }
+        @media only screen and (max-width:300px){    /* only screen and: bcz of diff media */
+            #box1{
+                display: block;
+                background-color: red;
+            }
+        }
+        @media only screen and (min-width:301px) and (max-width:500px){
+            #box2{
+                display: block;
+                background-color: blue;
+            }
+        }
+        @media only screen and (min-width:501px) and (max-width:800px){
+            #box3{
+                display: block;
+                background-color: green;
+            }
+        }
+        @media only screen and (min-width:801px){
+            #box4{
+                display: block;
+                background-color: purple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">I am an Iphone</div>
+    <div class="box" id="box2">I am a Tablet</div>
+    <div class="box" id="box3">I am a Laptop</div>
+    <div class="box" id="box4">I am a WideScreen Computer</div>
+</body>
+</html>

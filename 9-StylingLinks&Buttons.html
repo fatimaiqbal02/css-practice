@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Selectors and Other designing</title>
+
+    <style>
+        .container{
+            border:2px darkslategrey solid;
+            background-color: bisque;
+            padding: 34px;
+            margin: 19px auto;
+            width: 666px;
+        }
+        h3{
+            margin: auto;
+            width: 170px;
+            text-decoration: underline;
+        }
+        .btn{
+            background-color: maroon;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            margin: 14px 53px;
+            padding: 11px;
+            cursor: pointer;  /* since buttton does not have */
+            border-radius: 11px;
+            border: none;
+
+        }
+        a:hover{
+            background-color: rgb(161, 4, 4);
+            font-weight: bold;
+        }
+    /*  a:visited{
+            background-color: gray;
+        } */
+        a:active{
+            background-color: rgb(234, 115, 115);
+            font-weight: bold;
+        }
+        button:hover{
+            background-color: rgb(161, 4, 4);
+            font-weight: bold;
+        }
+        button:active{
+            background-color: rgb(234, 115, 115);
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ipsa ipsum, possimus hic facere ipsam? Nemo dignissimos libero ad in saepe est, autem illo adipisci voluptas consectetur perferendis tempore minus totam consequatur sapiente. Nam.</p>
+        <a href="https://youtube.com" class="btn">Go to Youtube</a>
+        <button class="btn">Read more</button>
+    </div>
+</body>
+</html>

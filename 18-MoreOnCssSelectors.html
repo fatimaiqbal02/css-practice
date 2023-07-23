@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On Css Selectors</title>
+    <style>
+        h3{
+            background-color: maroon;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+     /* div p{
+            background-color: blue;
+            color: white;
+        } */
+
+    /* .row p{
+            background-color: blue;
+            color: white;
+        } */
+
+    /*  div li p{                
+            background-color: blue;
+            color: white;
+        } */
+
+   /*   div > p{                
+            background-color: blue;
+            color: white;
+        } */             /* all the p's written right after div (div's direct child) */
+
+    /*  div + p{                 
+            background-color: blue;
+            color: white;
+        }  */              /* all the p's right after whole div (not including indise p's of div) */
+        
+
+    </style>
+</head>
+<body>
+    <h3>This is More About CSS Selectors</h3>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><p>This is paragraph inside ul,li</p></li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outer paragraph</p>
+</body>
+</html>

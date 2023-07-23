@@ -1,0 +1,218 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navBar-height: 59px;
+}
+/* Navigation bar */
+#navBar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    position: fixed;
+    width: 100%;
+    /* top:0px; */
+}
+nav::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+/* Navigation Bar: Logo and image */
+#logo{
+    margin: 6px 22px;
+}
+#logo img{
+    height: 54px;
+    margin: 0px 4px;
+}
+/* Navigation Bar: List styling */
+nav ul{
+    display: flex;
+    justify-content: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    padding: 3px 22px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 470px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: " ";
+    position: absolute;
+    background: url('/2-css/Projects-Images/food.jpg') no-repeat center center/cover;
+    height: 85%;   /* can be changed */
+    width: 100%;
+    top:0px;
+    left: 0px;
+    z-index: -2;
+    opacity: 0.9;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+} 
+/* Services Section */
+#services{
+    margin-top: 51px;
+    margin-bottom: 32px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#services-part{
+    display: flex;
+}
+#services-part .box{
+    border: 2px solid brown;
+    padding: 3px 14px;
+    margin: 3px 7px;
+    border-radius: 23px;
+    background-color: rgb(246 245 249);
+}
+#services-part img{         /* services img */
+    display: block;
+    margin: auto;
+    height: 154px;
+    width: 223px;
+}
+#services-part .box p{
+    font-size: 0.83rem;
+    font-family: 'Bree Serif', serif;
+} 
+/* Clients Section */
+#clients{
+    /* margin-top: 9px;
+    margin-bottom: 0px;
+    padding: 9px; */
+    height: 400px;
+}
+#clients-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients-part img{
+    height: 138px;
+    width: 142px;
+    padding: 15px;
+}
+#clients-part .clientItems{
+    padding: 0px 2px;
+}
+#clients::before{
+    content: " ";
+    position: absolute;
+    background: url('https://source.unsplash.com/collection/190727') no-repeat center center/cover;
+    height: 65%;   /* can be changed */
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+/* Contact section */
+#contact{
+    position: relative;
+    margin-top: 32px;
+    margin-bottom: 0px;
+    font-family: 'Bree Serif', serif;
+}
+#contact::before{
+    content: " ";
+    position: absolute;
+    background: url('/2-css/Projects-Images/contact.jpg') no-repeat center center/cover;
+    height: 100%;   /* can be changed */
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#contactBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contactBox form{
+    width: 38%;
+}
+#contactBox label{
+    font-size: 1.3rem;
+}
+#contactBox input, #contactBox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+/* footer section */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+/* Utility classes */
+.h-primary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 1.0rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding: 3px 22px;
+    border: 2px solid white;
+    background-color: brown;
+    margin: 17px;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(202, 51, 51);
+}
+.btn:active{
+    background-color: rgb(232, 64, 64);
+}
+.center{
+    text-align: center;
+}

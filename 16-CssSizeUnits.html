@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Size Units</title>
+    <style>
+        html{
+            font-size: 15px;
+        }
+        .container{
+            height: 100vh;  /* viewport-height */    /* helps in responsiveness */
+            width: 100vw;   /* viewport-width */
+            border: 2px solid black;
+            font-size: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            /* em USE: helps in responsiveness, when delete one item other adjust accordingly,
+                        adjust according to container font size */
+            font-size: 3em;     /* font size: 3em X 10px = 30px */
+            padding: 3em;       /* padding: 3em X 30px = 90px */
+        }
+        #second{
+            /* rem USE: helps in responsiveness, when delete one item other adjust accordingly,
+                        more better the em, adjust according to html font size */
+            font-size: 3rem;     /* font size: 3rem X 15px = 45px */
+            padding: 3rem;       /* padding: 3rem X 15px = 45px */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first pargraph</h1>
+        <h1 id="second">This is second pargraph</h1>
+        <h1 id="third">This is third pargraph</h1>
+    </div>
+</body>
+</html>

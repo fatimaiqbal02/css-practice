@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Css</title>
+
+    <style>
+        span{
+            color:yellow;                /* not marked important so will be of external */
+            background:blue  !important;    /*marked important so will be of internal */
+        }
+    </style>
+
+    <link rel="stylesheet" href="1-Introduction.css">
+    <!--last written will get precendence out of internal/external -->
+</head>
+<body>
+    <h3>Inline Css:</h3>
+    <a style="color: red;  background-color: plum;">My Name is Fatima Iqbal Mirza</a>
+
+    <br> <h3>Internal/External Css:</h3>
+    <span>My Name is Fatima Iqbal Mirza</span>
+
+</body>
+</html>
+<!-- First precedence >> Inline then Internal/External based on last written -->
