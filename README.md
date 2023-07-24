@@ -3,7 +3,7 @@
 Welcome to my CSS-practice repository!
  
  # <h3>Introduction</h3>
-This GitHub repository contains my practice codes during the all the CSS practice codes I've created during my learning journey. This repository contains codes for various CSS topics, 
+This GitHub repository contains my practice codes for CSS, I've created during my learning journey. This repository contains codes for various CSS topics, 
 including transitions and animations, CSS grid, flexbox, positioning, and much more.I have delved deep into these concepts to gain hands-on experience.
 All the codes neat and are written in well organized manner.
 
